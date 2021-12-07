@@ -149,6 +149,9 @@ hr {
 }
 
 /* Photographs */
+.photo__container {
+  margin: 1rem 0;
+}
 .photo {
   position: relative;
   box-shadow: var(--shadow-elevation-medium);
@@ -204,18 +207,41 @@ img.photo__zoom-image {
 
 /* Layout */
 .page-body {
-  width: 100rem;
-  max-width: 90%;
-  margin: 0 auto;
+  width: 64rem;
+  max-width: 80%;
+  margin: 2rem auto;
 }
 .ping-pong {
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.ping-pong--reverse {
+  flex-direction: row-reverse;
 }
 
 .ping-pong__image-container,
 .ping-pong__text-container {
   flex: 1;
+  padding: 2rem;
+}
+
+.longform-text {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.longform-text__side-column {
+  flex: 1;
+  padding: 2rem;
+}
+
+.longform-text__main-column {
+  flex: 3;
   padding: 2rem;
 }

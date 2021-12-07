@@ -55,7 +55,7 @@ const Photograph = ({
 
   return (
     <>
-      <div className="photo-container">
+      <div className="photo__container">
         <div className="photo">
           <Image
             className="photo__image"
