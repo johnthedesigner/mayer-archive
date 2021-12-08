@@ -4,6 +4,7 @@ import { withRouter } from "next/router";
 const navPages = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
+  { label: "Collections", path: "/collections" },
 ];
 
 const Logo = ({ color }) => {
@@ -54,10 +55,8 @@ const Header = ({ title, color, router }) => {
             let activeClass = "";
             let styles = {};
             if (router.pathname === page.path) {
-              console.log("active path found");
               activeClass = "main-nav__link--active";
               styles = navItemStyles(color);
-              console.log(styles);
             }
             return (
               <li className="main-nav__item" key={page.path}>

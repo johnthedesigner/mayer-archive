@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <Header title="About the Mayer Archive" color="blue" />
-      <Hero background="hero-bg-02.svg">
+      <Hero background="hero-bg-01.svg">
         <h1 className="hero__title">About the Mayer Archive</h1>
       </Hero>
     </>

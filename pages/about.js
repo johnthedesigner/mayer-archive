@@ -1,39 +1,49 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Photograph from "../components/Photograph";
+import PingPong from "../components/Pingpong";
 
 const About = () => {
   return (
     <>
       <Header color="gold" />
-      <Hero background="hero-bg-01.svg">
+      <Hero background="hero-bg-03.svg" height="10rem">
         <h1 className="hero__title">About the Mayer Archive</h1>
       </Hero>
       <div className="page-body">
-        <div className="ping-pong">
-          <div className="ping-pong__text-container">
-            <h2>Ralph Mayer</h2>
-            <p>
-              <em>1929 – 2011</em>
-            </p>
-            <p>
-              Fusce gravida consectetur ipsum, eu malesuada ipsum convallis
-              quis. Phasellus quis tellus a neque ultrices semper pellentesque
-              vel nunc. Aenean hendrerit at nulla ac suscipit. Class aptent
-              taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos.
-            </p>
-          </div>
-          <div className="ping-pong__image-container">
-            <Photograph
-              imageId="324_1957-01-13_07"
-              resolution="1000"
-              zoomResolution="1000"
-              collection="the-photographer"
-              caption="Lorem ipsum dolor sit amet."
-            />
-          </div>
-        </div>
+        <PingPong
+          TextContent={() => {
+            return (
+              <>
+                <h2>Ralph Mayer</h2>
+                <p>
+                  <em>1929 – 2011</em>
+                </p>
+                <p>
+                  Fusce gravida consectetur ipsum, eu malesuada ipsum convallis
+                  quis. Phasellus quis tellus a neque ultrices semper
+                  pellentesque vel nunc. Aenean hendrerit at nulla ac suscipit.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+              </>
+            );
+          }}
+          Photo={() => {
+            return (
+              <Photograph
+                imageId="324_1957-01-13_07"
+                resolution="1000"
+                zoomResolution="1000"
+                collection="the-photographer"
+                caption="Lorem ipsum dolor sit amet."
+                colorPop="blue"
+                priority={true}
+              />
+            );
+          }}
+          reverse={true}
+        />
         <div className="longform-text">
           <div className="longform-text__side-column">
             <Photograph
@@ -42,10 +52,11 @@ const About = () => {
               zoomResolution="1000"
               collection="the-city"
               caption="Lorem ipsum dolor sit amet."
+              colorPop="red"
             />
           </div>
           <div className="longform-text__main-column">
-            <h2>Discovering the Negatives</h2>
+            <h3>Discovering the Negatives</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               convallis bibendum felis, sit amet rhoncus risus iaculis vitae.
@@ -83,6 +94,7 @@ const About = () => {
               zoomResolution="1000"
               collection="the-city"
               caption="Lorem ipsum dolor sit amet."
+              colorPop="blue"
             />
             <Photograph
               imageId="232_1952-06-16_03"
@@ -90,10 +102,11 @@ const About = () => {
               zoomResolution="1000"
               collection="the-city"
               caption="Lorem ipsum dolor sit amet."
+              colorPop="gold"
             />
           </div>
           <div className="longform-text__main-column">
-            <h2>Discovering the Negatives</h2>
+            <h3>Discovering the Negatives</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               convallis bibendum felis, sit amet rhoncus risus iaculis vitae.
