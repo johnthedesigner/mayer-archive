@@ -3,8 +3,8 @@ import { withRouter } from "next/router";
 
 const navPages = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/about" },
   { label: "Collections", path: "/collections" },
+  { label: "About the Archive", path: "/about" },
 ];
 
 const Logo = ({ color }) => {

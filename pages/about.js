@@ -2,15 +2,16 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Photograph from "../components/Photograph";
 import PingPong from "../components/Pingpong";
+import PageBody from "../components/PageBody";
 
 const About = () => {
   return (
     <>
-      <Header color="gold" />
+      <Header color="red" />
       <Hero background="hero-bg-03.svg" height="10rem">
         <h1 className="hero__title">About the Mayer Archive</h1>
       </Hero>
-      <div className="page-body">
+      <PageBody>
         <PingPong
           TextContent={() => {
             return (
@@ -136,7 +137,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+      </PageBody>
     </>
   );
 };
