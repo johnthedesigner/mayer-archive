@@ -157,7 +157,9 @@ hr {
   position: relative;
   text-align: center;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-items: center;
   height: 14rem;
   background-position: center center;
   background-size: auto 100%;
@@ -185,7 +187,59 @@ hr {
   font-family: "Taviraj", serif;
   font-size: 4rem;
   text-align: center;
+  margin: 0;
   flex: 1;
+}
+
+.collection-hero {
+  position: relative;
+}
+
+.collection-hero__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.collection-hero__title-container {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.collection-hero__title,
+.collection-hero__subtitle,
+.collection-hero__date-range {
+  line-height: 1.25;
+  margin: 0 auto;
+}
+
+.collection-hero__title {
+  color: #fff8e7;
+}
+
+.collection-hero__date-range {
+  font-style: italic;
+}
+
+.collection-hero__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.collection-hero__image-container,
+.collection-hero__text-container {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.collection-hero__text-container {
+  padding-top: 6rem;
 }
 
 /* Photographs */
@@ -317,6 +371,16 @@ img.photo__zoom-image {
   height: 100%;
   width: 100%;
   fit-content: contain;
+}
+
+/* Collection */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.collection-grid__item {
+  padding: 0.5rem 2rem;
 }
 
 .single-column {

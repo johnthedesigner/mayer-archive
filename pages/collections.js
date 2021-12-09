@@ -29,7 +29,7 @@ const Collections = () => {
                   Class aptent taciti sociosqu ad litora torquent per conubia
                   nostra, per inceptos himenaeos.
                 </p>
-                <Link href="/">
+                <Link href="/collections/the-city">
                   <a
                     className="button"
                     title="Mayer Archive Photo Collection – The City"
