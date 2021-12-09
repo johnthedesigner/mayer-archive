@@ -141,9 +141,12 @@ const Collections = () => {
       />
       <PageBody>
         <div className="collection-grid">
-          {photos.map((photo) => {
+          {photos.map((photo, index) => {
             return (
-              <div className="collection-grid__item">
+              <div
+                key={`${photo.imageId}_${index}`}
+                className="collection-grid__item"
+              >
                 <Photograph
                   imageId={photo.imageId}
                   resolution={photo.resolution}
