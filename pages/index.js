@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Header from "../components/Header";
 import PageBody from "../components/PageBody";
-import PingPong from "../components/Pingpong";
+import PingPong from "../components/PingPong";
 import Photograph from "../components/Photograph";
 
 export default function Home() {

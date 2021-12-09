@@ -1,10 +1,6 @@
-import Link from "next/link";
-
 import Header from "../../components/Header";
-import Hero from "../../components/Hero";
 import Photograph from "../../components/Photograph";
 import PageBody from "../../components/PageBody";
-import PingPong from "../../components/Pingpong";
 import CollectionHero from "../../components/CollectionHero";
 
 const photos = [
