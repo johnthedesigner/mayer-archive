@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import Header from "../../components/Header";
 import Photograph from "../../components/Photograph";
 import PageBody from "../../components/PageBody";

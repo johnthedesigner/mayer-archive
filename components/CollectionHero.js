@@ -1,5 +1,4 @@
 import Photograph from "./Photograph";
-import Hero from "./Hero";
 import PageBody from "./PageBody";
 
 const CollectionHero = ({

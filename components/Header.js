@@ -1,3 +1,4 @@
+import _ from "lodash";
 import Link from "next/link";
 import { withRouter } from "next/router";
 
@@ -45,6 +46,22 @@ const navItemStyles = (color) => {
   }
 };
 
+const isNavBranch = (routerPath, navPath) => {
+  if (navPath === "/" && routerPath === "/") {
+    console.log(routerPath, navPath, "this is the homepage");
+    // If both are homepage
+    return true;
+  } else if (navPath !== "/" && _.includes(routerPath, navPath)) {
+    console.log(routerPath, navPath, "this page matches");
+    // If navpath isn't homepage but is a substring of routerpath
+    return true;
+  } else {
+    console.log(routerPath, navPath, "this page is somewhere else");
+    // This navpath isn't active
+    return false;
+  }
+};
+
 const Header = ({ title, color, router }) => {
   return (
     <header className="global-header">
@@ -54,7 +71,8 @@ const Header = ({ title, color, router }) => {
           {navPages.map((page) => {
             let activeClass = "";
             let styles = {};
-            if (router.pathname === page.path) {
+            // console.log(_.includes(router.pathname, page.path));
+            if (isNavBranch(router.pathname, page.path)) {
               activeClass = "main-nav__link--active";
               styles = navItemStyles(color);
             }
