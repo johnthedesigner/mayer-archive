@@ -14,6 +14,14 @@ const Photograph = ({
   let filename = `${imageId}_${resolution}x${resolution}.jpg`;
   let pathname = `/image-collections/${collection}/${resolution}x${resolution}/${filename}`;
 
+  const getRotation = () => {
+    let randomizer = Math.random();
+    let rangeMax = 3;
+    let rangeMin = -3;
+    let rotation = randomizer * (rangeMax - rangeMin) + rangeMin;
+    return rotation;
+  };
+
   const Caption = ({ text }) => {
     if (text) {
       return <p className="photo__caption">{text}</p>;
@@ -80,10 +88,14 @@ const Photograph = ({
     background: colorPopBackground(colorPop),
   };
 
+  let rotationStyles = {
+    transform: `rotate(${getRotation()}deg)`,
+  };
+
   return (
     <>
       <div className="photo__container">
-        <div className="photo">
+        <div className="photo" style={rotationStyles}>
           <div className="photo__color-pop" style={colorPopStyles} />
           <Image
             className="photo__image"

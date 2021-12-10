@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../../components/Header";
 import Photograph from "../../components/Photograph";
 import PageBody from "../../components/PageBody";
@@ -138,20 +139,24 @@ const Collections = () => {
       <PageBody>
         <div className="collection-grid">
           {photos.map((photo, index) => {
+            let filename = `${photo.imageId}_${photo.resolution}x${photo.resolution}.jpg`;
             return (
-              <div
-                key={`${photo.imageId}_${index}`}
-                className="collection-grid__item"
-              >
-                <Photograph
-                  imageId={photo.imageId}
-                  resolution={photo.resolution}
-                  zoomResolution={photo.zoomResolution}
-                  collection={photo.collection}
-                  caption={photo.caption}
-                  priority={false}
-                />
-              </div>
+              <Link href={`/collections/${photo.collection}/${filename}`}>
+                <a title={photo.caption}>
+                  <div
+                    key={`${photo.imageId}_${index}`}
+                    className="collection-grid__item"
+                  >
+                    <Photograph
+                      imageId={photo.imageId}
+                      resolution={photo.resolution}
+                      collection={photo.collection}
+                      caption={photo.caption}
+                      priority={false}
+                    />
+                  </div>
+                </a>
+              </Link>
             );
           })}
         </div>

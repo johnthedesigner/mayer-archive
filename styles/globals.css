@@ -249,9 +249,15 @@ hr {
 }
 .photo {
   position: relative;
-  box-shadow: var(--shadow-elevation-medium);
+  box-shadow: var(--shadow-elevation);
   padding: 0.5rem;
   background: #f5f5f5;
+  box-shadow: var(--shadow-elevation-medium);
+  transition: all ease-out 0.3s;
+}
+.photo:hover {
+  box-shadow: var(--shadow-elevation-high);
+  transform: rotate(0deg) !important;
 }
 
 .photo__image {
