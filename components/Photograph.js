@@ -9,17 +9,22 @@ const Photograph = ({
   zoomResolution,
   priority,
   colorPop,
+  tilt,
 }) => {
   const [zoomOpen, setZoomOpen] = useState(false);
   let filename = `${imageId}_${resolution}x${resolution}.jpg`;
   let pathname = `/image-collections/${collection}/${resolution}x${resolution}/${filename}`;
 
   const getRotation = () => {
-    let randomizer = Math.random();
-    let rangeMax = 3;
-    let rangeMin = -3;
-    let rotation = randomizer * (rangeMax - rangeMin) + rangeMin;
-    return rotation;
+    if (tilt) {
+      let randomizer = Math.random();
+      let rangeMax = 3;
+      let rangeMin = -3;
+      let rotation = randomizer * (rangeMax - rangeMin) + rangeMin;
+      return rotation;
+    } else {
+      return 0;
+    }
   };
 
   const Caption = ({ text }) => {

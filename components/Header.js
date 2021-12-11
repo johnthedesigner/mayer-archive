@@ -48,15 +48,12 @@ const navItemStyles = (color) => {
 
 const isNavBranch = (routerPath, navPath) => {
   if (navPath === "/" && routerPath === "/") {
-    console.log(routerPath, navPath, "this is the homepage");
     // If both are homepage
     return true;
   } else if (navPath !== "/" && _.includes(routerPath, navPath)) {
-    console.log(routerPath, navPath, "this page matches");
     // If navpath isn't homepage but is a substring of routerpath
     return true;
   } else {
-    console.log(routerPath, navPath, "this page is somewhere else");
     // This navpath isn't active
     return false;
   }

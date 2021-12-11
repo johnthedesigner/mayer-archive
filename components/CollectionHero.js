@@ -6,8 +6,8 @@ const CollectionHero = ({
   photoCaption,
   collection,
   collectionTitle,
-  CollectionIntro,
   collectionDateRange,
+  description,
 }) => {
   let styles = {
     backgroundImage: `url("/hero-bg-02.svg")`,
@@ -25,7 +25,9 @@ const CollectionHero = ({
       <PageBody>
         <div className="collection-hero__content">
           <div className="collection-hero__text-container">
-            <CollectionIntro />
+            {description.map((paragraph, index) => {
+              return <p key={index}>{paragraph}</p>;
+            })}
           </div>
           <div className="collection-hero__image-container">
             <Photograph
