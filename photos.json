@@ -77,6 +77,84 @@
           "dateDeveloped": "1952-04-14"
         }
       ]
+    },
+    {
+      "id": "mid-century-life",
+      "label": "Mid-Century Life",
+      "dateRange": "1947 – 1956",
+      "description": [
+        "Fusce gravida consectetur ipsum, eu malesuada ipsum convallis quis. Phasellus quis tellus a neque ultrices semper pellentesque vel nunc. Aenean hendrerit at nulla ac suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "Malesuada ipsum convallis quis. Phasellus quis tellus a neque ultrices semper pellentesque vel nunc. Aenean hendrerit at nulla ac suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+      ],
+      "photos": [
+        {
+          "id": "319_1956-11-03_10",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1956-11-03"
+        },
+        {
+          "id": "318_1956-11-03_03",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1956-11-03"
+        },
+        {
+          "id": "316_1956-11-03_10",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1956-11-03",
+          "thumbnail": true
+        },
+        {
+          "id": "311_1956-NA-NA_06",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1956-09-04"
+        },
+        {
+          "id": "311_1956-NA-NA__06",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1952-04-14"
+        },
+        {
+          "id": "310_1956-NA",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1952-04-14"
+        },
+        {
+          "id": "232_1952-06-16_03",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1952-04-14"
+        },
+        {
+          "id": "232_1952-06-16_03",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1952-04-14"
+        },
+        {
+          "id": "232_1952-06-16_03",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1952-04-14"
+        },
+        {
+          "id": "232_1952-06-16_03",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1952-04-14"
+        },
+        {
+          "id": "232_1952-06-16_03",
+          "caption": "Lorem ipsum dolor sit amet",
+          "description": ["Lorem ipsum dolor sit amet"],
+          "dateDeveloped": "1952-04-14"
+        }
+      ]
     }
   ]
 }

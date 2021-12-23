@@ -10,6 +10,8 @@ const Photograph = ({
   priority,
   colorPop,
   tilt,
+  float,
+  photoRef,
 }) => {
   const [zoomOpen, setZoomOpen] = useState(false);
   let filename = `${imageId}_${resolution}x${resolution}.jpg`;
@@ -97,11 +99,21 @@ const Photograph = ({
     transform: `rotate(${getRotation()}deg)`,
   };
 
+  const conditionalClasses = () => {
+    let classes = "photo";
+    if (float) classes += " photo--float";
+    return classes;
+  };
+
   return (
     <>
       <div className="photo__container">
-        <div className="photo" style={rotationStyles}>
-          <div className="photo__color-pop" style={colorPopStyles} />
+        <div className="photo__color-pop" style={colorPopStyles} />
+        <div
+          ref={photoRef}
+          className={conditionalClasses()}
+          style={rotationStyles}
+        >
           <Image
             className="photo__image"
             src={pathname}
